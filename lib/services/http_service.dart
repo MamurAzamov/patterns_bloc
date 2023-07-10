@@ -6,7 +6,7 @@ import '../model/post_model.dart';
 import 'log_service.dart';
 
 class Network {
-  static String BASE = "jsonplaceholder.typicode.com";
+  static String BASE = "64abd39f9edb4181202e9f23.mockapi.io";
   static Map<String, String> headers = {
     'Content-Type': 'application/json; charset=UTF-8'
   };
@@ -74,7 +74,7 @@ class Network {
     params.addAll({
       'title': post.title,
       'body': post.body,
-      'userId': post.userId.toString(),
+      // 'userId': post.userId.toString(),
     });
     return params;
   }
@@ -85,7 +85,7 @@ class Network {
       'id': post.id.toString(),
       'title': post.title,
       'body': post.body,
-      'userId': post.userId.toString(),
+      // 'userId': post.userId.toString(),
     });
     return params;
   }

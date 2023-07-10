@@ -46,10 +46,11 @@ class _UpdatePageState extends State<UpdatePage> {
               String title = titleController.text.toString();
               String body = bodyController.text.toString();
               Post post = Post(
-                  id: widget.post!.id,
-                  title: title,
-                  body: body,
-                  userId: widget.post!.userId);
+                id: widget.post!.id,
+                title: title,
+                body: body,
+                // userId: widget.post!.userId
+              );
               return viewOfUpdate(
                   true, context, post, titleController, bodyController);
             }

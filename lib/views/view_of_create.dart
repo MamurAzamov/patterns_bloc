@@ -33,8 +33,8 @@ Widget viewOfCreate(
                 Post post = Post(
                     title: titleController.text.toString(),
                     body: bodyController.text.toString(),
-                    userId: 1,
-                    id: 1);
+                    // userId: 1,
+                    id: "1");
                 BlocProvider.of<CreatePostCubit>(context).apiPostCreate(post);
               },
               child: const Text(

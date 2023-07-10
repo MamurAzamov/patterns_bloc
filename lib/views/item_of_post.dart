@@ -43,9 +43,10 @@ Widget itemOfPost(BuildContext context, Post post) {
         ],
       ),
       child: Container(
+        width: double.infinity,
         padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(post.title.toUpperCase()),
             const SizedBox(
